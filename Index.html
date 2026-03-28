@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakthivel Anandhan Portfolio</title>
+  <link rel="stylesheet" href="./Index.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo"><span class="highlight">S</span>akthivel <span class="highlight">A</span>nandhan</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul id="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About-1">About</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Experience">Experience</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="Home" id="Home">
+    <div>
+      <h2>Front-End <span class="highlight">Developer</span></h2>
+      <h1>Sakthivel Anandhan</h1>
+      <p>Enthusiastic BE Graduate Eager to Launch a Career in the IT Industry with a Strong Learning Mindset and
+        Technical
+        Foundation.</p>
+
+      <a href="Sakthivel_Anandhan_Resume.pdf" download class="btn" target="_blank">
+        Download Resume
+      </a>
+    </div>
+
+    <img src="Image/Profile.jpg" alt="Profile">
+  </section>
+
+  <section Id="About-1">
+    <div id="About" class="About">
+    <h2>About Me</h2>
+    <div>
+      <p>
+        Hi, my name is Sakthivel Anandhan. I completed my Bachelor of Engineering in Electronics and Communication
+        Engineering from Paavai Engineering College.
+      </p>
+
+      <p>
+        Coming to my professional experience, I am currently working at Resource Pro as a Client Associate for the past
+        one year. In my role, I work on multiple client systems with minimal supervision and ensure that assigned tasks
+        are completed according to the standard operating procedures (SOPs).
+      </p>
+      <p>
+        I have also onboarded two tasks from the client side and created detailed procedure documents based on the
+        training provided, which helps the team follow the process efficiently and maintain consistency in task
+        execution.
+      </p>
+      <p>
+        Through this experience, I have developed skills in process understanding, documentation, system handling, and
+        maintaining accuracy while working with different client platforms.
+      </p>
+
+    </div>
+    </div>
+  </section>
+
+  <section id=" Skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Java</span>
+      <span>React.js</span>
+      <span>Git</span>
+      <span>GitHub</span>
+    </div>
+  </section>
+
+  <section id="Experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Resource Pro - SDU Associate</h3>
+      <p>1 Year Experience</p>
+      <ul>
+        <li>Worked on 9+ insurance systems</li>
+        <li>Handled EPIC & BenefitPoint</li>
+        <li>Created SOP documents</li>
+        <li>Maintained workflow accuracy</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="Projects">
+    <h2>Project</h2>
+    <div class="card">
+      <h3>Smart Sanitary Napkin Dispensing System</h3>
+      <p>
+        IoT-based automated dispensing system with sensors and real-time monitoring.
+      </p>
+    </div>
+  </section>
+
+  <section id="Contact">
+    <h2>Contact Me</h2>
+    <p>Email: Sakthivelsanjay284@gmail.com</p>
+    <p>Phone: +91 6369126944</p>
+
+    <form action="https://formspree.io/f/xdapaldz" method="POST">
+      <input name="Username" type="text" placeholder="Your Name" required>
+      <input name="email" type="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("nav-links").classList.remove("active");
+      });
+    });
+  </script>
+
+</body>
+
+</html>
